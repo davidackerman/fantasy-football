@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/logo.png">
+<meta name="description" content="Weekly waiver and lineup plans for Little Debbie and the Buckets’">
+<meta property="og:title" content="Little Debbie and the Buckets’">
+<meta property="og:description" content="Weekly waiver and lineup plans">
+<title>Waiver plan: what to change, what to hold</title>
+<style>
+:root{--bg:#fcfcfb;--fg:#0b0b0b;--mut:#6b6a66;--line:#e1e0d9;--card:#f4f3ef;--ok-bg:#e3f1e3;--ok-fg:#1c5a1c;--me-bg:#e4ecfa;--me-fg:#1e4a8c;--dr-bg:#fbe4e4;--dr-fg:#8c1d1d;--am-bg:#fbefd0;--am-fg:#7a5200;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1a19;--fg:#f0efec;--mut:#a9a89f;--line:#33322f;--card:#242422;--ok-bg:#1d3a1d;--ok-fg:#a8dba8;--me-bg:#1e2f4d;--me-fg:#a9c6f2;--dr-bg:#4a1d1d;--dr-fg:#f2b8b8;--am-bg:#4a3a14;--am-fg:#f0d28a}}
+:root[data-theme="dark"]{--bg:#1a1a19;--fg:#f0efec;--mut:#a9a89f;--line:#33322f;--card:#242422;--ok-bg:#1d3a1d;--ok-fg:#a8dba8;--me-bg:#1e2f4d;--me-fg:#a9c6f2;--dr-bg:#4a1d1d;--dr-fg:#f2b8b8;--am-bg:#4a3a14;--am-fg:#f0d28a}
+*{box-sizing:border-box}
+.team{display:flex;align-items:center;gap:14px;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line)}.team img{width:64px;height:64px;border-radius:50%;flex:none}.team b{display:block;font-size:20px;font-weight:700;line-height:1.2}.team span{color:var(--mut);font-size:13px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:15px}
+main{max-width:820px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:24px;font-weight:600;margin:0 0 2px}
+.sub{color:var(--mut);font-size:13px;margin:0 0 18px}
+h2{font-size:16px;font-weight:600;margin:26px 0 8px}
+.plan{display:grid;gap:8px}
+.card{background:var(--card);border-radius:10px;padding:10px 12px}
+.card b{font-weight:600}
+.row1{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.bid{font-weight:600;font-variant-numeric:tabular-nums}
+.why{color:var(--mut);font-size:13px;margin-top:2px}
+.note{color:var(--mut);font-size:12.5px;margin-top:10px}
+.lg{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--mut);align-items:center;margin:6px 0 0}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-2px;margin-right:4px}
+.dt{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin-right:4px}
+.scroll{overflow-x:auto}
+.inner{min-width:780px}
+.g{display:grid;grid-template-columns:minmax(0,1.9fr) .45fr 1fr .75fr .75fr .7fr .7fr .65fr minmax(0,2.3fr);gap:2px;align-items:center;font-size:13px;font-variant-numeric:tabular-nums}
+.gh{font-size:11px;font-weight:600;color:var(--mut);text-align:right;line-height:1.2;padding:0 3px 4px;border-bottom:1px solid var(--line);align-items:end}
+.gh>div:first-child{text-align:left;padding-left:0}
+.gh>div:last-child{text-align:left;position:relative;height:30px;padding:0}
+.gh .t{position:absolute;top:15px;transform:translateX(-50%);font-weight:400}
+.gh .ttl{position:absolute;left:0;top:0;font-weight:400}
+.c{text-align:right;padding:4px;border-radius:3px}
+.c.v{font-weight:600}
+.nm{overflow:hidden;text-align:left}
+.nm .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wk{display:block;font-size:11px;color:var(--mut);line-height:1.3}
+.tag{display:inline-block;font-size:11px;padding:0 5px;border-radius:4px;margin-left:5px}
+.mine{background:var(--me-bg);color:var(--me-fg)}
+.pick{background:var(--ok-bg);color:var(--ok-fg);font-weight:600}
+.drop{background:var(--dr-bg);color:var(--dr-fg);font-weight:600}
+.cut{background:var(--am-bg);color:var(--am-fg);font-weight:600}
+.rw{padding:4px 0;border-bottom:1px solid var(--line)}
+.pl{position:relative;height:34px}
+.gl{position:absolute;top:0;bottom:0;border-left:1px dashed var(--line)}
+.d{position:absolute;top:12px;width:10px;height:10px;margin-left:-5px;border-radius:50%;opacity:.85}
+.md{position:absolute;top:5px;width:2px;height:24px;margin-left:-1px;background:var(--fg)}
+.bl{position:absolute;top:1px;font-size:11px;color:var(--mut)}
+.rk{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 4px}.rk th{font-size:11px;font-weight:600;color:var(--mut);text-align:left;padding:0 6px 4px;border-bottom:1px solid var(--line)}.rk td{padding:6px;border-bottom:1px solid var(--line);vertical-align:top}.rk td:first-child{width:24px;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<header class="team"><img src="assets/logo.png" alt="Little Debbie and the Buckets’ logo"><div><b>Little Debbie and the Buckets’</b><span>LD&amp;B’ · since ’15 · Platinum 840 · Co-Manager: Anna</span></div></header>
+<h1>Waiver plan: what to change, what to hold</h1>
+<p class="sub">Little Debbie and the Buckets’ · points use our league’s scoring, applied to weekly stats through Week 6</p>
+
+<h2>The plan</h2>
+<div class="plan">
+<div class="card"><div class="row1"><span><b>Projected this week (Yahoo):</b> about 121.5 now, about 133 with these moves</span><span class="bid">vs 136.8</span></div>
+<div class="why">136.8 is ProHokie’s projection. The gain is a free lineup change (Javonte Williams (RB) to RB and Carnell Tate (WR) to the flex, +4.2), then the claims: Vikings over Patriots (+2.7), Freiermuth over Ferguson (+2.4), Washington over Tate in the flex (+1.1) and Lloyd over Roquan Smith (+1.1).</div></div>
+<div class="card"><div class="row1"><span><b>Add</b> Pat Freiermuth (TE), <b>drop</b> Jake Ferguson (TE)</span><span class="bid">bid $7</span></div>
+<div class="why">Median game 7.3 vs 3.3. Ferguson’s 6.2 average is one 18-point game. Backup: Hunter Henry (TE), $3.</div></div>
+<div class="card"><div class="row1"><span><b>Add</b> Devin Lloyd (LB), <b>drop</b> Roquan Smith (LB)</span><span class="bid">bid $3</span></div>
+<div class="why">Median game 9.0 vs 6.5. Lloyd’s 14.0 average includes one 31-point game (8.3 without it). Roquan Smith is down to 5.5 over his last three. Backup: Jack Campbell (LB), $2. Smaller edge than the TE move, so skip it if you’d rather keep the roster steady.</div></div>
+<div class="card"><div class="row1"><span><b>Add</b> Malik Washington (WR), <b>drop</b> Cam Little (K)</span><span class="bid">bid $3</span></div>
+<div class="why">Yahoo projects him at 10.3 this week vs Carnell Tate’s 9.3, and his median game is 10.5 vs 7.3, so he’d take the flex and Tate moves to the bench. No RB claim this week: the best waiver RBs are committee backs or hot streaks. Watch Week 8, when Marks and Skattebo are both on bye.</div></div>
+<div class="card"><div class="row1"><span><b>Add</b> Minnesota Vikings (DEF), <b>drop</b> New England Patriots (DEF)</span><span class="bid">bid $4</span></div>
+<div class="why">Yahoo projects the Vikings at 7.8 this week vs 5.1, and 6.6 vs 6.2 per game the rest of the way. My estimate of their scoring so far is about 12 per game vs 7 for the Patriots, whose average is one 21-point game. Their bye already passed, so there’s no bye ahead. Defenses swing a lot, so treat the edge as modest. Backup: Cleveland Browns (DEF), $2.</div></div>
+<div class="card"><div class="row1"><span><b>Who to drop:</b> Jake Ferguson (TE), Roquan Smith (LB), Cam Little (K) and New England Patriots (DEF)</span></div>
+<div class="why">Ferguson, Smith and the Patriots go out with the claims above. You only need one kicker: Little is on bye this week and the two score about the same, so cut him and keep Evan McPherson (K), who plays Sunday. That frees the spot for Malik Washington (WR). Don’t cut Saquon Barkley (RB) or Cam Skattebo (RB) yet: Woody Marks (RB) and Skattebo are both on bye in Week 8, so you’ll need Barkley healthy or another RB next week. Don’t drop Jared Goff (QB).
+</div></div>
+<div class="card"><div class="row1"><span><b>Hold, don’t churn:</b> Jaxon Smith-Njigba, Garrett Wilson, DK Metcalf, Carnell Tate (all WR); Javonte Williams, Woody Marks, Cam Skattebo, Saquon Barkley (all RB); Dalton Kincaid (TE); Jordan Love, Jared Goff (both QB)</span></div>
+<div class="why">One-time upgrades, not weekly swaps. Only revisit for an injury, a role change, or a bye problem, and judge on several games, not one.</div></div>
+<div class="card"><div class="row1"><span><b>Lineup:</b> bench Cam Skattebo (RB) and Carnell Tate (WR); start Malik Washington (WR) in the flex and Javonte Williams (RB) at RB</span></div>
+<div class="why">If you miss on Washington, use Carnell Tate (WR, 9.3) in the flex. Saquon Barkley (RB) is projected 12.7, but he’s coming off a hamstring injury and plays Monday night, so you can’t swap him out if he sits. Jared Goff (QB) has outscored Jordan Love (QB) 23.0 to 19.2 per game, though Yahoo has them nearly even this week.</div></div>
+</div>
+<p class="note">Bids are estimates from this league’s past waiver results: winners usually bid well above the next-highest offer. Bids are sealed and processed together, so there’s nothing to bluff: the goal is to beat the likely field as cheaply as possible, and ties go to the team with the worst record, which isn’t yours. Yahoo’s projections run high for players who have underperformed (Ferguson, Montgomery, Tate), so they’re only a tiebreaker here.</p>
+
+<h2>Moves ranked by importance and confidence</h2>
+<p class="note" style="margin:0 0 6px">Every gain is the player you add minus the player you drop (for Washington, minus Carnell Tate), in points. A plus sign means the new player is projected higher. The first two moves give up nothing real, so do them either way. The last two are real trade-offs.</p>
+<table class="rk"><thead><tr><th>#</th><th>This week</th><th>Gain, Week 7 (Yahoo)</th><th>What you give up</th><th>Confidence</th></tr></thead><tbody>
+<tr><td>1</td><td>Add Pat Freiermuth (TE), drop Jake Ferguson (TE)</td><td>+2.4</td><td>Nothing real: Ferguson is bench-level</td><td>High: results and news agree</td></tr>
+<tr><td>2</td><td>Add Malik Washington (WR), drop Cam Little (K)</td><td>+1.1</td><td>Nothing: Little is a spare kicker, so only the bid</td><td>Medium: Caleb Douglas (WR) may return</td></tr>
+<tr><td>3</td><td>Add Minnesota Vikings (DEF), drop New England Patriots (DEF)</td><td>+2.7</td><td>A usable starting defense</td><td>Medium-low: only Yahoo says so, and defenses swing a lot</td></tr>
+<tr><td>4</td><td>Add Devin Lloyd (LB), drop Roquan Smith (LB)</td><td>+1.1</td><td>A decent starter</td><td>Low-medium: small edge</td></tr>
+</tbody></table>
+<p class="note" style="margin:0 0 14px">Free this week, no claim needed: start Javonte Williams (RB) at RB and Tate in the flex, about +4.2. Washington’s +5.2 earlier included this free change.</p>
+<table class="rk"><thead><tr><th>#</th><th>Rest of season</th><th>Gain per game (Yahoo)</th><th>Gain per game (results, best game removed)</th><th>Confidence</th></tr></thead><tbody>
+<tr><td>1</td><td>Freiermuth (TE) for Ferguson (TE)</td><td>+1.0</td><td>+3.1</td><td>High: Ferguson is the fourth option in Dallas</td></tr>
+<tr><td>2</td><td>Washington (WR) for Tate (WR) as your flex</td><td>+1.0</td><td>+2.8</td><td>Medium: steady results, but target competition may grow</td></tr>
+<tr><td>3</td><td>Lloyd (LB) for Roquan Smith (LB)</td><td>+1.4</td><td>+1.6</td><td>Medium-low: four games, one spike, a calf injury</td></tr>
+<tr><td>4</td><td>Vikings (DEF) for Patriots (DEF)</td><td>+0.4</td><td>+6.6</td><td>Low: five games of my own estimate</td></tr>
+</tbody></table>
+<p class="note" style="margin:0 0 14px">Drop confidence: Ferguson and Little high, Patriots medium, Roquan Smith low.</p>
+<h2>Why Yahoo’s numbers differ from recent results</h2>
+<div class="plan">
+<div class="card"><div class="row1"><span><b>Jaylin Noel</b> (WR, HOU)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 7.1 vs 12.9 so far</span></div><div class="why">Houston traded for Marvin Harrison Jr. (WR) on Oct 13, which analysts expect to cut Noel’s targets. Nico Collins (WR) is back as the WR1 and Tank Dell (WR) is nearing a return. Noel plays only 26% to 62% of snaps. His projection could drop further, or hold if Harrison’s role stays small.</div></div>
+<div class="card"><div class="row1"><span><b>Malik Washington</b> (WR, MIA)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 10.3 vs 10.5</span></div><div class="why">Miami released Tyreek Hill and traded Jaylen Waddle, so he’s the top wideout, and he returns kicks, which your league scores. Risk: rookie Caleb Douglas (WR) may return from an ankle injury this week, and Washington scored 8.7 PPR points or less in the first two games Douglas played.</div></div>
+<div class="card"><div class="row1"><span><b>Pat Freiermuth</b> (TE, PIT)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 8.1</span></div><div class="why">Steelers receiver injuries pushed his targets up, and his next opponents (New Orleans, Cleveland) allow a lot of TE points. Risk: four TDs on 21 catches, and Darnell Washington (TE) shares the work.</div></div>
+<div class="card"><div class="row1"><span><b>Jake Ferguson</b> (TE, DAL)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 5.7 vs 3.3 median</span></div><div class="why">He has been out-targeted by WR3 Ryan Flournoy in five of six games and is the fourth option behind CeeDee Lamb (WR) and George Pickens (WR). Yahoo’s number probably still reflects last year’s role (82 catches, 8 TDs).</div></div>
+<div class="card"><div class="row1"><span><b>Saquon Barkley</b> (RB, PHI)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 12.7 vs 5.2</span></div><div class="why">He left Week 4 in the first quarter and has missed two games with a hamstring injury, which drags his average down. Yahoo assumes a heavy workload: Jalen Hurts (QB) is out for the season, the other Eagles backs are on injured reserve, and Dallas has allowed 842 rushing yards in five games. Risks: his hamstring, a weaker offense with Tanner McKee (QB), and a Monday-night game you can’t swap out of.</div></div>
+<div class="card"><div class="row1"><span><b>Cam Skattebo</b> (RB, NYG)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 5.1</span></div><div class="why">He got zero touches on six snaps in Week 6 after four fumbles in five games, so his season line now counts that game as 0. The Giants released Najee Harris (RB), which opens the backfield, but analysts say not to trust him until the coach uses him again, and Houston is a hard matchup.</div></div>
+<div class="card"><div class="row1"><span><b>Devin Lloyd</b> (LB, CAR)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 8.9 vs 14.0</span></div><div class="why">One 31-point game inflates his average, and he missed a game with a calf injury. ESPN’s Ben Solak expected him to fall back from last year’s career season, and Carolina has less talent around him than Jacksonville did.</div></div>
+<div class="card"><div class="row1"><span><b>Rachaad White</b> (RB, WAS)</span><span class="bid" style="font-weight:500;font-size:13px">Yahoo 6.8 vs 10.3</span></div><div class="why">He’s the passing-downs back, but Jacory Croskey-Merritt (RB) is the lead back, and White missed Week 4 with a shoulder injury. About 22 of his 52 points came from two TDs and kick returns, and Yahoo expects the returns to fade.</div></div>
+</div>
+
+<h2>The numbers</h2>
+<div class="lg">
+<span><span class="sw" style="background:rgba(226,75,74,.5)"></span>worse</span>
+<span><span class="sw" style="background:rgba(30,160,90,.5)"></span>better</span>
+<span>bye: red = this week, gray = passed</span>
+<span><span class="dt" style="background:#eb6834"></span>ours</span>
+<span><span class="dt" style="background:#2a78d6"></span>candidate</span>
+<span>chart: each dot is a game (fainter = earlier week), tick = median, label = best game</span>
+</div>
+<div id="out"></div>
+</main>
+<script>
+var D={
+"Quarterback":{max:32,rows:[
+["Jared Goff","mine",6,5,23.0,20.5,21.3,null,94,[[1,16.4],[2,29.8],[3,19.4],[4,20.5],[5,28.9]]],
+["Jordan Love","mine",11,6,19.2,20.4,18.0,null,93,[[1,21.5],[2,13.8],[3,19.5],[4,14.1],[5,25.3],[6,21.2]]]]},
+"Linebacker":{max:32,rows:[
+["Devin Lloyd","pick",5,4,14.0,9.0,8.3,8.8,90,[[1,10],[2,31],[4,8],[6,7]]],
+["Roquan Smith","drop",13,6,7.7,6.5,6.7,7.4,88,[[1,12],[2,5],[3,12.5],[4,3.5],[5,6.5],[6,6.5]]],
+["Jack Campbell","",6,5,7.5,8.0,6.9,7.9,54,[[1,7],[2,4],[3,8.6],[4,10],[5,8]]],
+["Sonny Styles","",7,6,7.9,8.8,7.2,7.0,46,[[1,8],[2,1.5],[3,11.4],[4,6],[5,9.5],[6,11]]]]},
+"Tight end":{max:22,rows:[
+["Pat Freiermuth","pick",9,6,8.8,7.3,6.8,7.6,45,[[1,13.1],[2,5.4],[3,4.1],[4,9.2],[5,19],[6,2.1]]],
+["Brenton Strange","",7,6,7.8,8.1,6.8,8.9,57,[[1,9.3],[2,2.7],[3,4.7],[4,13],[5,10.3],[6,6.9]]],
+["Hunter Henry","",11,6,7.7,7.6,6.4,6.7,52,[[1,4.1],[2,6.5],[3,1],[4,8.7],[5,11.9],[6,13.8]]],
+["Jake Ferguson","drop",14,6,6.2,3.3,3.7,6.6,61,[[1,1.6],[2,18.3],[3,7.8],[4,2.6],[5,3.4],[6,3.3]]]]},
+"Wide receiver":{max:40,rows:[
+["Jaxon Smith-Njigba","mine",11,6,23.6,21.8,20.7,19.4,100,[[1,22.2],[2,38],[3,30.4],[4,10.1],[5,21.3],[6,19.4]]],
+["Garrett Wilson","mine",13,6,12.9,12.6,11.1,12.2,99,[[1,10.9],[2,14.2],[3,21.7],[4,4.2],[5,19.9],[6,6.4]]],
+["DK Metcalf","mine",9,6,9.0,8.3,7.8,9.7,93,[[1,6],[2,4.7],[3,10.6],[4,14],[5,3.8],[6,14.8]]],
+["Jaylin Noel","",8,6,12.9,12.3,11.1,6.7,8,[[1,9.8],[2,8],[3,6.8],[4,16.1],[5,14.8],[6,22]]],
+["Malik Washington","pick",6,5,10.5,10.5,10.0,11.2,42,[[1,8.4],[2,10.5],[3,11.4],[4,9.5],[5,12.8]]],
+["Carnell Tate","mine",9,6,8.8,7.3,7.2,10.2,86,[[1,5.8],[2,4.2],[3,8.8],[4,17],[5,1.1],[6,16]]]]},
+"Running back":{max:30,rows:[
+["Javonte Williams","mine",14,6,16.6,15.2,14.1,15.2,100,[[1,21.7],[2,6.5],[3,17.3],[4,28.8],[5,13.2],[6,12]]],
+["Rachaad White","",7,5,10.3,11.3,9.5,6.8,57,[[1,6.6],[2,11.3],[3,12.5],[5,7.5],[6,13.7]]],
+["Woody Marks","mine",8,6,9.2,8.8,8.8,8.5,85,[[1,8.4],[2,8],[3,11.2],[4,8.2],[5,10.5],[6,9.1]]],
+["Cam Skattebo","mine",8,6,7.7,7.3,6.4,8.7,97,[[1,14.1],[2,7.5],[3,11.5],[4,7.1],[5,6.1],[6,0]]],
+["Saquon Barkley (Q)","mine",10,4,5.2,5.5,4.2,11.2,99,[[1,8.5],[2,2.5],[3,8.5],[4,1.5]]]]},
+"Kicker":{max:20,rows:[
+["Evan McPherson","mine",6,5,10.8,11.0,8.8,8.4,32,[[1,19],[2,12],[3,11],[4,5],[5,7]]],
+["Cam Little","drop",7,6,9.3,8.5,8.4,8.2,91,[[1,12],[2,8],[3,5],[4,14],[5,8],[6,9]]]]},
+"Defense (team)":{max:25,rows:[
+["Minnesota Vikings","pick",6,5,12.2,11.0,11.0,6.6,82,[[1,8],[2,17],[3,17],[4,8],[5,11]]],
+["Cincinnati Bengals","",6,5,9.0,9.0,6.8,6.0,19,[[1,18],[2,11],[3,3],[4,4],[5,9]]],
+["New England Patriots","drop",11,6,7.2,6.0,4.4,6.2,88,[[1,6],[2,21],[3,-1],[4,5],[5,6],[6,6]]],
+["New York Jets","",13,6,6.8,5.5,5.0,5.6,16,[[1,9],[2,6],[3,1],[4,5],[5,16],[6,4]]],
+["Cleveland Browns","",11,6,6.5,7.5,6.0,6.1,22,[[1,0],[2,6],[3,6],[4,9],[5,9],[6,9]]],
+["Tennessee Titans","",9,6,6.5,4.5,3.6,null,4,[[1,0],[2,7],[3,7],[4,2],[5,2],[6,21]]]]}
+};
+var W7={'Jared Goff':19.54,'Jordan Love':20.00,'Roquan Smith':7.84,'Jake Ferguson':5.70,'Carnell Tate':9.25,'Javonte Williams':14.90,'Woody Marks':11.33,'Cam Skattebo':5.10,'Saquon Barkley (Q)':12.67,'Jaxon Smith-Njigba':19.14,'Garrett Wilson':13.07,'DK Metcalf':11.34,'Evan McPherson':7.94,'Malik Washington':10.32,'Jaylin Noel':7.10,'Pat Freiermuth':8.07,'Hunter Henry':7.31,'Devin Lloyd':8.89,'Jack Campbell':8.58,'Minnesota Vikings':7.82,'New England Patriots':5.13,'Tennessee Titans':7.75,'Cleveland Browns':7.38,'New York Jets':7.52,'Cincinnati Bengals':5.40};
+function lineChart(k,rows,mx){
+ var W=740,H=248,L=34,R=140,T=22,B=26,N=8,pal=['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4','#6250d6','#e34948','#008300'];
+ var pw=W-L-R,ph=H-T-B;
+ function X(w){return L+(w-1)/(N-1)*pw}
+ function Y(v){return T+ph-(Math.max(0,v)/mx)*ph}
+ var s='<div class="scroll"><svg viewBox="0 0 '+W+' '+H+'" width="100%" style="min-width:600px;display:block;margin:4px 0 2px" role="img" aria-label="Points by week, plus Yahoo projections for this week and per game for the rest of the season, for each '+k.toLowerCase()+'">';
+ s+='<text x="0" y="9" font-size="11" style="fill:var(--mut)">Points</text>';
+ for(var t=0;t<=mx;t+=10){s+='<line x1="'+L+'" x2="'+(L+pw)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" style="stroke:var(--line)" stroke-width="1"/><text x="'+(L-6)+'" y="'+(Y(t)+4)+'" text-anchor="end" font-size="11" style="fill:var(--mut)">'+t+'</text>';}
+ var xl=['W1','W2','W3','W4','W5','W6','W7 proj','Rest/game'];
+ for(var w=1;w<=N;w++){s+='<text x="'+X(w)+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" style="fill:var(--mut)">'+xl[w-1]+'</text>';}
+ var labels=[];
+ rows.forEach(function(r,i){
+  var c=pal[i%pal.length],mine=(r[1]=='mine'||r[1]=='drop'||r[1]=='cut'||r[1]=='cut1'),sw=mine?2.8:1.8;
+  var pts=r[9].slice().sort(function(a,b){return a[0]-b[0]});
+  var d='';
+  pts.forEach(function(p,j){d+=(j?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1)+' ';});
+  s+='<path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="'+sw+'" stroke-linejoin="round" stroke-linecap="round"/>';
+  var last=pts[pts.length-1],endY=Y(last[1]),w7=W7[r[0]];
+  if(w7!=null){
+   endY=Y(w7);
+   s+='<path d="M'+X(last[0]).toFixed(1)+' '+Y(last[1]).toFixed(1)+' L'+X(7).toFixed(1)+' '+endY.toFixed(1)+'" fill="none" stroke="'+c+'" stroke-width="'+sw+'" stroke-dasharray="1 5" stroke-linecap="round"/>';
+   s+='<circle cx="'+X(7).toFixed(1)+'" cy="'+endY.toFixed(1)+'" r="4" fill="var(--bg)" stroke="'+c+'" stroke-width="1.8"><title>'+r[0]+' Yahoo projection this week: '+w7.toFixed(1)+'</title></circle>';
+  }
+  if(r[7]!=null){
+   var ry=Y(r[7]),rx=X(8);endY=ry;
+   s+='<rect x="'+(rx-3.6).toFixed(1)+'" y="'+(ry-3.6).toFixed(1)+'" width="7.2" height="7.2" transform="rotate(45 '+rx.toFixed(1)+' '+ry.toFixed(1)+')" fill="var(--bg)" stroke="'+c+'" stroke-width="1.8"><title>'+r[0]+' Yahoo projection, rest of season: '+r[7].toFixed(1)+' per game</title></rect>';
+  }
+  pts.forEach(function(p){s+='<circle cx="'+X(p[0]).toFixed(1)+'" cy="'+Y(p[1]).toFixed(1)+'" r="3.2" fill="'+c+'"><title>'+r[0]+' W'+p[0]+': '+p[1].toFixed(1)+'</title></circle>';});
+  labels.push({y:endY,c:c,n:r[0].replace(' (Q)','')});
+ });
+ labels.sort(function(a,b){return a.y-b.y});
+ for(var j=1;j<labels.length;j++){if(labels[j].y-labels[j-1].y<13)labels[j].y=labels[j-1].y+13;}
+ labels.forEach(function(l){s+='<circle cx="'+(X(N)+16)+'" cy="'+l.y+'" r="4" fill="'+l.c+'"/><text x="'+(X(N)+25)+'" y="'+(l.y+4)+'" font-size="11" style="fill:var(--fg)">'+l.n+'</text>';});
+ return s+'</svg></div><div style="font-size:11px;color:var(--mut);margin:0 0 6px">Solid line = actual points by week. Dotted line to the hollow circle = Yahoo’s projection for this week (Week 7), which I only have for your own players. Hollow diamond = Yahoo’s projected points per game for the rest of the season. Thicker lines are yours. Lines connect across missed weeks. Hover a mark for the value.</div>';
+}
+var TAGS={mine:['mine','mine'],pick:['pick','pick'],optional:['optional','pick'],drop:['drop','drop'],cut:['next cut','cut'],cut1:['cut one after wk 7','cut']};
+function num(v,st,pct,extra){
+ if(v==null)return '<div class="c">–</div>';
+ if(st.lo===st.hi)return '<div class="c v">'+(pct?Math.round(v)+'%':v.toFixed(1))+(extra||'')+'</div>';
+ var t=v<st.mid?(st.mid-v)/(st.mid-st.lo||1):(v-st.mid)/(st.hi-st.mid||1);
+ t=Math.min(1,Math.max(0,t));var a=(0.1+0.42*t).toFixed(2);
+ var c=v<st.mid?'226,75,74':'30,160,90';
+ return '<div class="c v" style="background:rgba('+c+','+a+')">'+(pct?Math.round(v)+'%':v.toFixed(1))+(extra||'')+'</div>';
+}
+function bye(b){
+ if(b==7)return '<div class="c v" style="background:rgba(226,75,74,.4)">7</div>';
+ if(b<7)return '<div class="c" style="color:var(--mut)">'+b+'</div>';
+ return '<div class="c">'+b+'</div>';
+}
+var h='';
+Object.keys(D).forEach(function(k){
+ var mx=D[k].max,rows=D[k].rows,idx=[4,5,6,7,8],st={};
+ idx.forEach(function(c){var vs=rows.map(function(r){return r[c]}).filter(function(x){return x!=null});
+  if(!vs.length){st[c]={lo:0,hi:0,mid:0};return;}
+  st[c]={lo:Math.min.apply(null,vs),hi:Math.max.apply(null,vs),mid:vs.reduce(function(a,b){return a+b},0)/vs.length};});
+ var ticks=[];for(var t=0;t<=mx;t+=10)ticks.push(t);
+ var v7=rows.map(function(r){return W7[r[0]]}).filter(function(x){return x!=null}),st7=v7.length>1?{lo:Math.min.apply(null,v7),hi:Math.max.apply(null,v7),mid:v7.reduce(function(a,b){return a+b},0)/v7.length}:{lo:0,hi:0,mid:0};
+ var ax='<span class="ttl">Points in each game</span>';ticks.forEach(function(t){ax+='<span class="t" style="left:'+(t/mx*100)+'%">'+t+'</span>'});
+ h+='<h2 style="font-size:14px;margin:18px 0 6px">'+k+'</h2><div class="scroll"><div class="inner"><div class="g gh"><div>Player</div><div>Bye</div><div>Season PPG (GP)</div><div>Median game</div><div>Excl. best</div><div>Proj rest/game</div><div>Proj wk 7</div><div>% ros</div><div>'+ax+'</div></div>';
+ rows.forEach(function(r){
+  var tg=r[1]&&TAGS[r[1]]?'<span class="tag '+TAGS[r[1]][1]+'">'+TAGS[r[1]][0]+'</span>':'';
+  var p=r[9].map(function(x){return x[1]}),best=Math.max.apply(null,p);
+  var s=p.slice().sort(function(a,b){return a-b}),i=Math.floor(s.length/2),m=s.length%2?s[i]:(s[i-1]+s[i])/2;
+  var col=(r[1]=='mine'||r[1]=='drop'||r[1]=='cut'||r[1]=='cut1')?'#eb6834':'#2a78d6';
+  var wk=r[9].map(function(x){return 'W'+x[0]+' '+(x[1]%1?x[1].toFixed(1):x[1])}).join(' · ');
+  h+='<div class="rw"><div class="g"><div class="nm"><div class="n">'+r[0]+tg+'</div></div>'+bye(r[2])+num(r[4],st[4],false,' <span style="font-weight:400;font-size:11px;color:var(--mut)">('+r[3]+')</span>')+num(r[5],st[5])+num(r[6],st[6])+num(r[7],st[7])+(r[2]==7?'<div class="c" style="color:var(--mut)">bye</div>':num(W7[r[0]]==null?null:W7[r[0]],st7))+num(r[8],st[8],true);
+  h+='<div class="pl">';
+  ticks.forEach(function(t){h+='<div class="gl" style="left:'+(t/mx*100)+'%"></div>'});
+  r[9].forEach(function(x){h+='<div class="d" style="left:'+(Math.max(0,x[1])/mx*100)+'%;background:'+col+';opacity:'+(0.25+0.75*(x[0]-1)/5).toFixed(2)+'" title="Week '+x[0]+': '+x[1].toFixed(1)+' pts"></div>'});
+  h+='<div class="md" style="left:'+(m/mx*100)+'%"></div>';
+  var bx=best/mx*100;
+  h+='<div class="bl" style="left:'+bx+'%;'+(bx>88?'transform:translateX(-170%)':'margin-left:9px')+'">'+(best%1?best.toFixed(1):best)+'</div></div></div></div>';
+ });
+ h+='</div></div>'+lineChart(k,rows,mx);
+});
+document.getElementById('out').innerHTML=h;
+</script>
+</body>
+</html>
